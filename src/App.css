@@ -1,38 +1,112 @@
-.App {
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+h1 {
+  margin: auto;
+  font-family: cursive;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  border: double;
+  border-radius: 10px;
+  font-family: cursive;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+}
+
+th {
+  background-color: rgb(0, 0, 0);
+  color: #eee;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td {
+  background-color: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+td:hover {
+  background: #cccccc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#submit-form {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  background-color: #15172b;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: auto;
+}
+
+.input {
+  background-color: #46495e;
+  border-radius: 12px;
+  border: 0;
+  height: auto;
+  font-family: cursive;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  outline: 0;
+  padding: 20px;
+}
+
+form {
+  position: sticky;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form * {
+  font-size: 28px;
+}
+
+button {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  color: #eee;
+  font-family: cursive;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 5px;
+  text-decoration: none;
+  transition: 250ms ease-in-out, transform 150ms ease;
+}
+
+button:hover,
+button:focus {
+  background: #1c5dbe;
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
+  outline: 1px solid #fff;
+  outline-offset: -4px;
 }
