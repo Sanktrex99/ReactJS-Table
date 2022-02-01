@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# ReactJS-Table to Manage your Contacts
+This is a Reac
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Preview](https://github.com/Sanktrex99/ReactJS-Table/blob/master/Preview.png)
 
 ## Available Scripts
 
